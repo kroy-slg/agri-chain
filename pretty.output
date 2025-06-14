@@ -1,0 +1,13 @@
+Feature:  # features/demo_fearture.feature:1
+
+  Scenario:                              # features/demo_fearture.feature:3
+    Given User open agri chain home page # features/steps/test_steps.py:5
+    Then User verifies home page         # features/steps/demo_steps.py:3
+
+  Scenario:                                                  # features/demo_fearture.feature:7
+    Given User open hrm login page                           # features/steps/login_steps.py:28
+    When User open orange hrm home page                      # features/steps/login_steps.py:6
+    And User enters username "Admin" and password "admin123" # features/steps/login_steps.py:11
+    And User clicks login button                             # features/steps/login_steps.py:17
+    Then User successfully login to dashboard page           # features/steps/login_steps.py:22
+
